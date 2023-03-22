@@ -1,0 +1,146 @@
+a {
+    text-decoration:none;
+}
+.box{
+    height:500x;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    background-color: aqua;
+}
+.animation{
+    height:200px;
+    position:relative;
+    overflow:hidden;
+    
+}
+.image1{
+    height:200px;
+    width:100%;
+    animation-name:image1;
+    animation-duration:10s;
+    position:absolute;
+    animation-fill-mode:both;
+}
+@keyframes image1{
+    0%{left:100%}
+    20%{left:0%}
+    90%{left:0%;opacity:1}
+    100%{opacity:0}
+}
+@keyframes textmove1{
+    0%{left:100%}
+    20%{left:0%;transform:scaleX(1)}
+    30%{transform:scaleX(0)}
+    40%{transform:scaleX(1)}
+    50%{transform:scaleX(0)}
+    60%{transform:scaleX(1)}
+    90%{transform:scaleX(1);opacity:1}
+    100%{opacity:0}
+}
+.text1{
+    top:10%;
+    position:absolute;
+    color:coral;
+    text-align:center;
+    width:100%;
+    animation-name:textmove1;
+    animation-duration:10s;
+    /* animation-delay:3s; */
+    animation-fill-mode:both;
+    animation-timing-function:infinite;
+    
+}
+.text2{
+    top:50%;
+    position:absolute;
+    color: yellow;
+    text-align:center;
+    width:100%;
+    animation-name:textmove2;
+    animation-duration: 10s;
+    /* animation-delay: 3s; */
+    animation-fill-mode:both;
+}
+@keyframes textmove2{
+    0%{left:100%}
+    20%{left:0%}
+    30%{color:green}
+    40%{color:aqua}
+    50%{color:cornflowerblue}
+    60%{color:blueviolet}
+    90%{color: blueviolet;opacity:1}
+    100%{opacity:0}
+}
+.image2{
+    animation-delay:9s;
+    height:200px;
+    width:100%;
+    animation-name:image2;
+    animation-duration:2s;
+    position:absolute;
+    animation-fill-mode:both;
+    
+}
+@keyframes image2{
+    0%{top:100%}
+    100%{top:0%}
+}
+.text3{
+    animation-name:textmove3;
+    animation-duration:5s;
+    top:15%;
+    left:100px;
+    position:relative;
+    width:200px;
+    animation-delay:9s;
+    animation-fill-mode:both;
+
+}
+@keyframes textmove3{
+    0%{opacity:0;transform:rotate(-30deg);font-size:15px;}
+    20%{color:aqua;transform:rotate(-30deg);font-size:35px;}
+    40%{color:blueviolet;transform:rotate(-30deg);font-size:15px;}
+    60%{color:cornflowerblue;transform:rotate(-30deg);font-size:35px;}
+    80%{color:blue;transform:rotate(-30deg);font-size:15px;}
+    100%{color:chartreuse;transform:rotate(-30deg);font-size:35px;}
+}
+.studentID{
+    background-color: orange;
+    animation-duration:3s;
+    height:200px;
+    width:100%;
+    position:absolute;
+    animation-name: studentID;
+    animation-delay:15s;
+    animation-fill-mode:both;
+}
+@keyframes studentID{
+    0%{top:100%}
+    100%{top:0%}
+}
+.ID1{
+    animation-name:ID1;
+    position:absolute;
+    animation-fill-mode:both;
+    animation-duration:3s;
+    animation-delay:18s;
+    text-align:center;
+    width:100%;
+}
+@keyframes ID1{
+    0%{left:-100%}
+    100%{left:0%}
+}
+.ID2{
+    animation-name:ID2;
+    position:absolute;
+    animation-fill-mode:both;
+    animation-duration:3s;
+    animation-delay:18s;
+    text-align:center;
+    width:100%;
+}
+@keyframes ID2{
+    0%{left:100%;top:40%}
+    100%{left:0%;top:40%}
+}
