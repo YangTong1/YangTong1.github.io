@@ -4,25 +4,31 @@
         <title>Project1</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8">
+        <script>
+            function replay(){
+                setTimeout(function(){
+                    document.getElementById("banner1").src="banner.html";
+                    document.getElementById("car1").src="car.html";
+                },25000);
+                setTimeout(function(){
+                    document.getElementById("button1").style.display="block";
+                },43000);
+            }
+            function replayButton(){
+                document.getElementById("car1").src="car.html";
+            }
+        </script>
     </head>
-    <body>
-        <a href="https://www.rydges.com/" target="_blank">
-        <div class="animation">
-            <img src="Rydges.jpeg" class="image1">
-            <h2 class="text1">Welcome to Rydges Hotel</h2>
-            <h1 class="text2">Thanks for your choosing Rydges</h1>
-            <img src="Rydges1.jpeg" class="image2">
-            <h3 class="text3">Renaissance</h3>
-            <div class="studentID"></div>
-            <h4 class="ID1">Student ID: 1546072</h4>
-            <h4 class="ID2">Name: Yang Tong</h4>
-        </div>
-        </a>
+    <body onload="replay()">
+        <iframe src="banner.html" class="banner1" id="banner1"></iframe>
         <div class="box">
             <div>Part3</div>
-            <div>Part2</div>
+            <iframe src="car.html" class="car1" id="car1"></iframe>
         </div>
-        <div><a href="StoryBoard1.pdf">Storyboard1</a></div>
-
+        <div>
+            <a href="StoryBoard1.pdf">Storyboard1</a>
+            <a href="StoryBoard2.pdf">StoryBoard2</a>
+            <button onclick="replayButton()" style="float:right;display: none;" id="button1">replayButton</button>
+        </div>
     </body>
 </html>

@@ -1,3 +1,9 @@
+body{
+    padding:0%;
+    margin:0;
+    width:100%;
+    height:100%;
+}
 a {
     text-decoration:none;
 }
@@ -143,4 +149,259 @@ a {
 @keyframes ID2{
     0%{left:100%;top:40%}
     100%{left:0%;top:40%}
+}
+.swift1{
+    height:100%;
+    width:100%;
+    animation-name: swift1;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    position:absolute;
+    left:0px;
+    top:0px;
+    
+}
+@keyframes swift1{
+    0%{transform:scale(0.2);opacity: 0}
+    100%{transform:scale(1);opacity:1}
+}
+.logo{
+    width:200px;
+    left:150px;
+    top:80px;
+    transform:scale(1.3);
+    position:absolute;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-name: logo;
+    animation-fill-mode: both;
+}
+.mainlogo{
+    width:200px;
+    left:150px;
+    top:25px;
+    position:absolute;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-name:logo;
+    animation-fill-mode:both;
+    transform:scale(0.8);
+}
+@keyframes logo{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.swifttext1{
+    font-size: 20px;
+    color:fuchsia;
+    font-family:'Courier New', Courier, monospace;
+    top:320px;
+    animation-name:swifttext1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    position:absolute;
+    animation-delay: 2s;
+}
+@keyframes swifttext1{
+    0%{left:-100px}
+    100%{left:200px}
+}
+.swifttext2{
+    font-size:35px;
+    top:335px;
+    animation-name:swifttext2;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    position:absolute;
+    color:chartreuse;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation-delay:2s;
+    
+}
+@keyframes swifttext2{
+    0%{left:500px;opacity:0}
+    100%{left:170px;opacity:1}
+}
+.swifttext3{
+    font-size: 15px;
+    color:darkblue;
+    font-family:Arial, Helvetica, sans-serif;
+    top:365px;
+    left:150px;
+    animation-name:swifttext3;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    position:absolute;
+    animation-delay: 4s;
+}
+@keyframes swifttext3{
+    0%{opacity: 0}
+    100%{opacity:1}
+}
+.swift2{
+    height:100%;
+    width:100%;
+    animation-duration:3s;
+    animation-name:swift2;
+    animation-fill-mode: both;
+    position:absolute;
+    left:0px;
+    top:0px;
+    animation-delay:7s;
+}
+@keyframes swift2{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.swifttext4{
+    animation-name: swifttext4;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 10s;
+    font-size: 40px;
+    color:deeppink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:absolute;
+    top:30px;
+}
+@keyframes swifttext4{
+    0%{left:350px;opacity:0}
+    100%{left:200px;opacity:1}
+}
+.swifttext5{
+    animation-name: swifttext5;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 10s;
+    font-size: 40px;
+    color:deeppink;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position:absolute;
+    top:70px;
+}
+@keyframes swifttext5{
+    0%{left:100px;opacity:0}
+    100%{left:220px;opacity:1}
+}
+.trim{
+    height:100%;
+    width:100%;
+    animation-duration:3s;
+    animation-name:trim;
+    animation-fill-mode: both;
+    position:absolute;
+    animation-delay:13s;
+}
+@keyframes trim{
+    0%{transform:scale(1);opacity:0}
+    100%{transform:scale(1);opacity:1}
+}
+.unmatched{
+    top:40px;
+    font-size: 30px;
+    animation-name:unmatched;
+    animation-duration: 2s;
+    animation-delay: 16s;
+    animation-fill-mode: both;
+    color:lime;
+    position:absolute;
+}
+@keyframes unmatched{
+    0%{left:70px;opacity:0}
+    100%{left:150px;opacity:1}
+}
+.stylee{
+    top:60px;
+    font-size:50px;
+    animation-name:stylee;
+    animation-duration: 2s;
+    animation-delay: 16s;
+    animation-fill-mode: both;
+    color:lime;
+    position:absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes stylee{
+    0%{left:230px;opacity:0}
+    100%{left:170px;opacity:1}
+}
+.trunk{
+    height:100%;
+    width:100%;
+    animation-delay: 18s;
+    animation-name:trunk;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    position:absolute;
+}
+@keyframes trunk{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.divstyle{
+    height:100%;
+    width:100%;
+    animation-delay:18s;
+    animation-name:divstyle;
+    animation-fill-mode:both;
+    animation-duration:3s;
+    background-color: lightgray;
+    position:absolute;
+    
+}
+@keyframes divstyle {
+    0%{opacity:0}
+    100%{opacity:0.7}
+}
+.suzukilogo{
+    top: 90px;
+    left:160px;
+    position:absolute;
+    width:200px;
+    animation-delay: 18s;
+    animation-name:suzukilogo;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+@keyframes suzukilogo{
+    0%{opacity: 0;}
+    100%{opacity:1;}
+}
+.ID3{
+    animation-name:ID3;
+    position:absolute;
+    animation-fill-mode:both;
+    animation-duration:3s;
+    animation-delay:18s;
+    width:100%;
+    top:200px;
+}
+@keyframes ID3{
+    0%{left:350px;opacity: 0;}
+    100%{left:200px;opacity:1}
+}
+.name{
+    animation-name:name;
+    position:absolute;
+    animation-fill-mode:both;
+    animation-duration:3s;
+    animation-delay:18s;
+    width:100%;
+    top:170px;
+}
+@keyframes name{
+    0%{left:50px;opacity: 0;}
+    100%{left:200px;opacity:1}
+}
+.banner1{
+    width:100%;
+    border:none;
+    display: block;
+    height:200px;
+}
+.car1{
+    width:100%;
+    border:none;
+    display: block;
+    height:400px;
 }
