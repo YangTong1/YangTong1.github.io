@@ -18,17 +18,75 @@
                 document.getElementById("car1").src="car.html";
             }
         </script>
+        <script src="bind.js"></script>
     </head>
     <body onload="replay()">
         <iframe src="banner.html" class="banner1" id="banner1"></iframe>
         <div class="box">
-            <div>Part3</div>
+            <div class="grid">
+                <div>
+                    <h3>Book Your Trip</h3>
+                    <ol>
+                        <li class="li1" id="li1">Enter personal Details</li>
+                        
+                        <li id="li2">Enter Trip Details</li>
+                        <li id="li3">Enter Accommodation Details</li>
+                        <li id="li4">Enter Preview Details</li>
+                    </ol>
+                </div>
+                <div>
+                    <div id="div1" class="div1">
+                        <h3>Personal Details:</h3>
+                        <div>First Name: <input type="text" id="txtfirstname"></div>
+                        <div>Last Name: <input type="text" id="txtlastname"></div>
+                        <div>Phone Number: <input type="text"id="txtphonenumber"></div>
+                        <div>Gender: <input type="radio" id="txtfemale" value="Female" name="gender">Female <input type="radio" id="txtmale" value="Male" name="gender">Male <input type="radio" id="txtother" value="Other" name="gender"> Other</div>
+                        <div>Number of People: <input type="number" id="txtpeoplenumber" value="1"></div>
+                    </div>
+                    <div id="div2" class="div2">
+                        <h3>Trip Details</h3>
+                        <div>Transport
+                            <select id ="select">
+                                <option value="Bus">Bus</option>
+                                <option value="Train">Train</option>
+                                <option value="Car">Car</option>
+                                <option value="Airplane">Airplane</option>
+                            </select>
+                        </div>
+                        <div>Date Depart<input type ="date" id="txtdepart"></div>
+                        <div>Date Return<input type ="date" id="txtreturn"></div>
+                    </div>
+                    <div id="div3" class="div3">
+                        <h3>Accommodation Details</h3>
+                        <div>Number of Rooms <input type ="range" min="1" max="10" id="txtrooms"></div>
+                        <div>Meals <input type="checkbox" id="breakfast" value="Breakfast" name="meal">Breakfast <input type="checkbox" id="lunch" value="Lunch" name="meal">Lunch <input type="checkbox" id="dinner" value="Dinner" name="meal">Dinner</div>
+                        <div>Souvenir Lanyard color: <input type="color" id="txtsouvenir"></div>
+                    </div>
+                    <div id="div4" class="div4">
+                        <h3>Preview Details</h3>
+                        <div><label>First Name: </label><label id="firstname">asdbcit</label></div>
+                        <div><label>Last Name: </label><label id="lastname">sdafg</label></div>
+                        <div><label>Phone Number: </label><label id="phonenumber">23456789</label></div>
+                        <div><label>Gender: </label><label id="gender">female</label></div>
+                        <div><label>Number of People: </label><label id="peoplenumber">2</label></div>
+                        <div><label>Transport: </label><label id="airplane">Airplane</label></div>
+                        <div><label>Date Depart: </label><label id="depart">dd/MM/yyyy</label></div>
+                        <div><label>Date Return: </label><label id="return">dd/MM/yyyy</label></div>
+                        <div><label>Number of Rooms: </label><label id="rooms">2</label></div>
+                        <div><label>Meal: </label><label id="meal">breakfast</label></div>
+                        <div><label>souvenir lanyard color: </label><label id="souvenir"></label></div>
+                    </div>
+                    <button onclick="bindPrevious()">Previous</button> <button onclick="bindNext()">Next</button>
+                </div>
+                
+            </div>
             <iframe src="car.html" class="car1" id="car1"></iframe>
         </div>
         <div>
-            <a href="StoryBoard1.pdf">Storyboard1</a>
-            <a href="StoryBoard2.pdf">StoryBoard2</a>
-            <button onclick="replayButton()" style="float:right;display: none;" id="button1">replayButton</button>
+             <a href="StoryBoard1.pdf">Storyboard1</a>
+             <a href="StoryBoard2.pdf">StoryBoard2</a>
+             <a href="StoryBoard3.pdf">StoryBoard3</a>
+             <button onclick="replayButton()" style="float:right;display: none;" id="button1">replayButton</button>
         </div>
     </body>
 </html>

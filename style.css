@@ -405,3 +405,30 @@ a {
     display: block;
     height:400px;
 }
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 75px;
+}
+.div1{
+
+}
+.div2{
+    display:none;
+}
+.div3{
+    display: none;
+}
+.div4{
+    display: none;
+}
+.li1{
+    background-color: blue;
+    color:aliceblue;
+}
+#souvenir {
+    width:60px;
+    height:20px;
+    display: block;
+    border: 3px solid black;
+}
